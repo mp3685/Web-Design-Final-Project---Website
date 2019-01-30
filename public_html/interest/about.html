@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME TO MY INTEREST SITE</title>
+	<!-- INLINE CSS (style sheet) -->
+	<!-- <style>
+		div{
+			border : solid 1px black;
+		}
+	</style> -->
+	<meta name="description" content="class site NYU"> <!-- Grey text in google search -->
+	<meta name="keywords" content="HTML, CSS, BOOTSTRAP">
+
+	<link rel="icon" type="images/png" href="favicon.png">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+	<!-- Prevent smartphones from scaling pages down -->
+	<meta name="viewport" content="initial-scale=1">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<!-- THIS IS THE TOP OF MY PAGE -->
+		<header>
+			<div id="banner">
+				<img src="../images/banner.jpg"/>
+				<!-- <img src="../images/banner.jpg"/> -->
+			</div>
+			<nav id="desktopNav">
+				<ul>
+					<li class="navLink"><a href="index.html">Main Page</a></li>
+					<li class="navLink"><a href="about.html">About</a></li>
+					<li class="navLink"><a href="media.html">Media</a></li>
+					<li class="navLink"><a href ="bestGameRightNow.html">Best Games Right Now</li>
+					<li class="navLink"><a href="topUpcomingGames.html">Top Upcoming Games</a></li>
+				</ul>
+			</nav>
+
+			<nav id="mobileNav">
+				<a href="javascript:void(0);" class="displayMenu" onclick="display()">
+    				<i class="fa fa-bars"></i>
+  				</a>
+  				<div id="mobileList">
+  				<ul>
+					<li class="navLink"><a href="index.html">Main Page</a></li>
+					<li class="navLink"><a href="about.html">About</a></li>
+					<li class="navLink"><a href="media.html">Media</a></li>
+					<li class="navLink"><a href ="bestGameRightNow.html">Best Games Right Now</li>
+					<li class="navLink"><a href="topUpcomingGames.html">Top Upcoming Games</a></li>
+				</ul>
+				</div>
+			</nav>
+
+			<script>
+			function display() {
+				var list = document.getElementById("mobileList");
+				if (list.style.visibility === "hidden"){
+					list.style.display = "";
+					list.style.visibility = "visible";
+				}
+				else {
+					list.style.display = "none";
+					list.style.visibility = "hidden";
+				}
+			}
+			</script>
+			
+		</header>
+		<!-- MAIN AREA -->
+		<section id='mainSection'>
+			<div class="mainTitle">
+				A Brief History of Video Games
+			</div>
+
+			<div class="Game">
+				<div class="Words">
+					<div class="contentHolder">
+						The 1970s is when video games were first developed. Games such as Pong and Space Invaders started the fame that video games currently have today.
+					</div>
+				</div>
+				<div class="Image">
+					<div class="contentHolder">
+						<img src="images/1970.png"/>
+					</div>
+				</div>
+
+				<div class="Words">
+					<div class="contentHolder">
+						The 1980s is when video games became mainstream, and more and more games were being created, and many famous franchises started. For example, Super Mario Bros. and The Legend of Zelda.
+					</div>
+				</div>
+				<div class="Image">
+					<div class="contentHolder">
+						<img src="images/1980.jpg"/> 
+					</div>
+				</div>
+			</div>
+
+			<div class="Game">
+				<div class="Words">
+					<div class="contentHolder">
+						In the 1990s, as the graphics of video games started to improve, many video games started using 3d graphics rather than 2d, aiming to make the games look as realistic as possible. One of the famous games of this era is Half-Life.
+					</div>
+				</div>
+				<div class="Image">
+					<div class="contentHolder">
+						<img src="images/1990.jpg"/>
+					</div>
+				</div>
+
+				<div class="Words">
+					<div class="contentHolder">
+						During the 2000s, 3D graphics improved even more, and as the popularity of video games continued to skyrocket, video games began to become a part of everyday life.
+					</div>
+				</div>
+				<div class="Image">
+					<div class="contentHolder">
+						<img src="images/2000.jpg"/> 
+					</div>
+				</div>
+			</div>
+
+			<div class="Game">
+				<div class="Words">
+					<div class="contentHolder">
+						Today, if you ask anyone, they could name at least 10 games within one minute. Video games are part of our society now, such as eSports tournaments where professional video game players compete.
+					</div>
+				</div>
+				<div class="Image">
+					<div class="contentHolder">
+						<img src="images/2010.jpg"/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer goes here -->
+		<footer>
+			<a id="Portfolio" href="../index.html">Go back to Portfolio</a>
+		</footer>
+	</div>
+
+</body>
+</html>

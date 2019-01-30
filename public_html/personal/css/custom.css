@@ -1,0 +1,126 @@
+/*@font-face{
+	font-family 		: myFont;
+	src 				: url(../assets/fonts/~~~~);
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+html { 
+  background: url(../../images/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+head{
+	display 			: flex;
+	flex-direction 		: row;
+	justify-content 	: center;
+}
+
+body{
+	/*background-color 	: rgba(154, 178, 9, 1);*/
+
+	padding 			: 0px;
+	margin 				: 0px;
+
+	display 			: flex;
+	flex-direction 		: row;
+	justify-content 	: center;
+}
+
+#container{
+	background-color 	: rgba(255, 255, 255, 0.5);
+	max-width 			: 960px;
+}
+
+#mainPicture{
+	display 			: flex;
+	flex-direction 		: row;
+	justify-content 	: center;
+}
+
+nav{
+	background-color 	: black;
+	padding 			: 0px;
+}
+
+nav ul{
+	background-color 	: blue;
+	list-style 			: none;
+	margin 				: 0px;
+	padding 			: 0px;
+
+	display 			: flex;
+}
+
+nav ul li{
+	/*background-color 	: blue;*/
+	border 				: solid 1px black;
+	/*width 				: 33%;*/
+	flex-grow 			: 1;
+	padding 			: 50px;
+}
+
+nav ul li a:link{
+	text-decoration 	: none;
+	color 				: white;
+	font-weight 		: bold;
+}
+
+nav ul li a:hover{
+	text-decoration 		: underline;
+}
+
+nav ul li a:active{
+	color 					: red;
+}
+
+nav ul li a:focus{/*press tab to jump around page*/
+	color 					: yellow;
+}
+
+nav ul li a:visited{
+	color 					: #f67;
+}
+
+#banner{
+	background-color 	: grey;
+	height 				: 150px;
+
+	padding 			: 0px;
+}
+
+/*.typeA{
+	background-color 	: red;
+}
+
+.typeB{
+	background-color 	: green;
+	padding 			: 10px;
+}*/
+
+/*#banner a:link{
+	text-decoration : none; /*removes underline
+	color 			: red;
+	/*font-family 	: sans-serif;
+	
+	font-family 	: myTequila;
+}
+
+#banner a:hover{
+	text-decoration : underline;
+}
+
+#banner a:visited{
+	color 			: rgba(0,100,0,1);
+}
+
+#banner a:active{
+	font-size 		: 100pt;
+}
+
+#banner a:focus{
+	font-size 		: 40pt;
+}*/
